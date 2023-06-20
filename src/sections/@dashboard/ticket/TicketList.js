@@ -51,7 +51,7 @@ export default function TicketList({ onOpenSidebar }) {
     onChangePage,
     onChangeRowsPerPage,
     setDense,
-  } = useTicket({ defaultRowsPerPage: 5 });
+  } = useTicket({ defaultRowsPerPage: 10 });
 
   const params = useParams();
   const [searchParams, setSearchParams] = useState(params);
@@ -137,7 +137,7 @@ export default function TicketList({ onOpenSidebar }) {
       ) : (
         <EmptyContent
           title={translate('ticket.empty')}
-          img="https://minimals.cc/assets/illustrations/illustration_empty_mail.svg"
+          img="/icons/ic_folder_empty.svg"
           sx={{ flexGrow: 1, height: 'auto' }}
         />
       )}

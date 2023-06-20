@@ -22,7 +22,7 @@ import HeaderBreadcrumbs from '../../components/HeaderBreadcrumbs';
 export default function QrDownload() {
   const { shop } = useAuth();
   const { number = '' } = useParams();
-  const [selecteLogo, setSelectedLogo] = useState(shop?.logo.url || '');
+  const [selecteLogo, setSelectedLogo] = useState(shop?.logo?.url || '');
   const [image, setImage] = useState(selecteLogo);
   const [isCheckedWithLogo, setIsCheckedWithLogo] = useState(true);
 
